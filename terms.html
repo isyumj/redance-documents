@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — ReDance</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .app-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1d1d1f;
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      gap: 4px;
+      background: #f0f0f0;
+      border-radius: 8px;
+      padding: 3px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      color: #6e6e73;
+      transition: all 0.15s;
+    }
+
+    .lang-btn.active {
+      background: #fff;
+      color: #1d1d1f;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+
+    .doc-header {
+      margin-bottom: 36px;
+    }
+
+    .doc-header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #1d1d1f;
+      margin-bottom: 8px;
+    }
+
+    .effective-date {
+      font-size: 14px;
+      color: #6e6e73;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    p {
+      color: #3a3a3c;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 12px;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #3a3a3c;
+      padding: 5px 0 5px 18px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: #6e6e73;
+      font-weight: 700;
+    }
+
+    a {
+      color: #007AFF;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    strong { color: #1d1d1f; }
+
+    .notice {
+      background: #fff8e6;
+      border-left: 3px solid #FF9500;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin: 14px 0;
+      font-size: 15px;
+      color: #3a3a3c;
+    }
+
+    .warning {
+      background: #fff2f2;
+      border-left: 3px solid #FF3B30;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin: 14px 0;
+      font-size: 15px;
+      color: #3a3a3c;
+    }
+
+    .caps {
+      font-size: 13px;
+      line-height: 1.8;
+      color: #3a3a3c;
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: #6e6e73;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #6e6e73;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      main { margin: 24px auto; padding: 0 16px 60px; }
+      section { padding: 22px 18px; border-radius: 12px; }
+      .doc-header h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="app-name" href="index.html">ReDance</a>
+  <div class="lang-toggle">
+    <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" data-lang="zh" onclick="setLang('zh')">中文</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ── English ── -->
+  <div class="lang-en">
+    <div class="doc-header">
+      <h1>Terms of Use</h1>
+      <p class="effective-date">Effective Date: April 28, 2026</p>
+    </div>
+
+    <section>
+      <h2>1. Acceptance of Terms</h2>
+      <p>By downloading, installing, or using the ReDance mobile application (the "App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App. These Terms constitute a legally binding agreement between you and ReDance. <strong>Apple Inc. is not a party to these Terms and is not responsible for the App or its content.</strong></p>
+    </section>
+
+    <section>
+      <h2>2. Relationship with Apple</h2>
+      <p>You acknowledge and agree that:</p>
+      <ul>
+        <li>These Terms are concluded between you and ReDance only, and not with Apple Inc.</li>
+        <li>Apple is not responsible for the App or its content.</li>
+        <li>Apple has no obligation to furnish any maintenance or support services with respect to the App.</li>
+        <li>In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) to you. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation with respect to the App.</li>
+        <li>Apple is not responsible for addressing any claims by you or any third party relating to the App, including: (i) product liability claims; (ii) any claim that the App fails to conform to any applicable legal or regulatory requirement; or (iii) claims arising under consumer protection or similar legislation.</li>
+        <li>Apple is not responsible for the investigation, defense, settlement, or discharge of any third-party intellectual property infringement claim relating to the App.</li>
+        <li>You agree to comply with all applicable third-party terms when using the App.</li>
+        <li>Apple and Apple's subsidiaries are third-party beneficiaries of these Terms, and upon your acceptance, Apple will have the right to enforce these Terms against you as a third-party beneficiary.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Eligibility</h2>
+      <p>You must be at least 13 years of age to use the App. By using the App, you represent that you meet this requirement. If you are under 18, you represent that a parent or legal guardian has reviewed and agreed to these Terms on your behalf.</p>
+    </section>
+
+    <section>
+      <h2>4. License Grant</h2>
+      <p>Subject to these Terms, ReDance grants you a limited, non-exclusive, non-transferable, revocable license to download and use the App on an Apple-branded device that you own or control, solely for your personal, non-commercial purposes, as permitted by the App Store Terms of Service. This license does not include the right to sublicense the App to any third party. <strong>The App is licensed to you, not sold.</strong></p>
+    </section>
+
+    <section>
+      <h2>5. Restrictions</h2>
+      <p>You may not:</p>
+      <ul>
+        <li>Copy, modify, or create derivative works based on the App</li>
+        <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App</li>
+        <li>Rent, lease, lend, sell, redistribute, or sublicense the App</li>
+        <li>Remove or alter any proprietary notices, labels, or marks on the App</li>
+        <li>Use the App for any unlawful purpose or in violation of any applicable laws or regulations</li>
+        <li>Attempt to gain unauthorized access to any systems or networks connected to the App</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Your Content and Copyright Responsibility</h2>
+      <p>The App allows you to import videos from your device's photo library for personal practice use. You retain full ownership of any videos you import. Your videos are stored locally on your device only and are never transmitted to our servers. We have no access to, and do not monitor, any content you import.</p>
+      <div class="warning">
+        <strong>You are solely and exclusively responsible for ensuring that you hold all necessary rights, licenses, and permissions to use any video you import into the App</strong>, including but not limited to rights to any music, sound recordings, performances, choreography, and visual content contained within those videos.
+      </div>
+      <p>By importing content into the App, you represent and warrant that:</p>
+      <ul>
+        <li>You own or have obtained all required rights and licenses for such content; and</li>
+        <li>Your use of that content within the App does not infringe any copyright, trademark, or other intellectual property right of any third party.</li>
+      </ul>
+      <p><strong>ReDance bears no responsibility whatsoever for any copyright infringement or other intellectual property violations arising from content you import.</strong> If any third party asserts a claim against us arising out of or related to content you have imported, you shall be solely responsible for resolving such claim and for all associated costs, damages, and liabilities.</p>
+    </section>
+
+    <section>
+      <h2>7. Physical Activity Disclaimer</h2>
+      <div class="warning">
+        <strong>THE APP IS INTENDED TO SUPPORT DANCE PRACTICE, WHICH IS A PHYSICAL ACTIVITY THAT CARRIES INHERENT RISKS OF INJURY.</strong> BY USING THE APP, YOU VOLUNTARILY ASSUME ALL RISKS ASSOCIATED WITH PHYSICAL ACTIVITY, INCLUDING BUT NOT LIMITED TO MUSCLE STRAINS, SPRAINS, FALLS, AND OTHER BODILY INJURIES.
+      </div>
+      <p><strong>REDANCE IS NOT RESPONSIBLE FOR ANY PERSONAL INJURY, BODILY HARM, DEATH, OR PROPERTY DAMAGE ARISING FROM OR RELATED TO YOUR USE OF THE APP OR ANY PHYSICAL ACTIVITY YOU UNDERTAKE IN CONNECTION WITH THE APP.</strong> You are solely responsible for ensuring that you are physically capable of engaging in any activity associated with use of the App, and we strongly recommend consulting a medical professional before beginning any new physical activity.</p>
+    </section>
+
+    <section>
+      <h2>8. Intellectual Property</h2>
+      <p>The App, including its design, code, graphics, user interface, and all other components, is owned by ReDance and is protected by applicable intellectual property laws, including copyright and trade dress laws. These Terms do not grant you any rights to our trademarks, logos, or other brand features. Any unauthorized use of our intellectual property is strictly prohibited.</p>
+    </section>
+
+    <section>
+      <h2>9. Privacy</h2>
+      <p>Your use of the App is also governed by our <a href="privacy.html">Privacy Policy</a>, which is incorporated into these Terms by reference. By using the App, you agree to the collection and use of information as described in the Privacy Policy.</p>
+    </section>
+
+    <section>
+      <h2>10. Indemnification</h2>
+      <p>You agree to indemnify, defend, and hold harmless ReDance and its owners, officers, and representatives from and against any and all claims, demands, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:</p>
+      <ul>
+        <li>Your use of the App</li>
+        <li>Any content you import into the App</li>
+        <li>Your violation of these Terms</li>
+        <li>Your violation of any applicable law or the rights of any third party, including any copyright, trademark, or other intellectual property rights</li>
+        <li>Any physical injury or property damage arising from your use of the App</li>
+      </ul>
+      <p>This indemnification obligation will survive the termination of these Terms and your use of the App.</p>
+    </section>
+
+    <section>
+      <h2>11. Disclaimer of Warranties</h2>
+      <div class="caps">THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY REDANCE SHALL CREATE ANY WARRANTY.</div>
+    </section>
+
+    <section>
+      <h2>12. Limitation of Liability</h2>
+      <div class="caps">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL REDANCE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY KIND, ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF REDANCE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</div>
+      <div class="caps" style="margin-top:10px">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, REDANCE'S TOTAL CUMULATIVE LIABILITY TO YOU FOR ANY AND ALL CLAIMS ARISING OUT OF OR RELATED TO THESE TERMS OR THE APP SHALL NOT EXCEED ONE US DOLLAR (USD $1.00).</div>
+    </section>
+
+    <section>
+      <h2>13. Dispute Resolution and Arbitration</h2>
+      <div class="notice"><strong>PLEASE READ THIS SECTION CAREFULLY. IT AFFECTS YOUR LEGAL RIGHTS.</strong></div>
+      <p>You and ReDance agree that any dispute, claim, or controversy arising out of or relating to these Terms or your use of the App shall be resolved by binding individual arbitration, rather than in court, except that either party may seek injunctive or other equitable relief in court for infringement of intellectual property rights.</p>
+      <div class="caps">WAIVER OF CLASS ACTIONS: YOU AND REDANCE AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS, COLLECTIVE, OR REPRESENTATIVE PROCEEDING. IF THIS SPECIFIC PROVISION IS FOUND UNENFORCEABLE, THEN THE ENTIRETY OF THIS ARBITRATION SECTION SHALL BE NULL AND VOID.</div>
+      <p style="margin-top:12px">Arbitration shall be conducted in Washington State under the rules of the American Arbitration Association. The arbitrator's award shall be final and binding and may be entered as a judgment in any court of competent jurisdiction.</p>
+    </section>
+
+    <section>
+      <h2>14. Governing Law</h2>
+      <p>To the extent a dispute is not subject to arbitration under Section 13, these Terms shall be governed by the laws of the State of Washington, United States, without regard to its conflict of law provisions. You consent to the exclusive jurisdiction of the courts located in Washington State.</p>
+    </section>
+
+    <section>
+      <h2>15. Termination</h2>
+      <p>We reserve the right to suspend or discontinue the App at any time and for any reason, with or without notice, and without liability to you. Upon termination, your license to use the App immediately ceases. Sections 6, 7, 8, 10, 11, 12, 13, and 14 shall survive termination.</p>
+    </section>
+
+    <section>
+      <h2>16. General Provisions</h2>
+      <p><strong>Entire Agreement.</strong> These Terms, together with the Privacy Policy, constitute the entire agreement between you and ReDance with respect to the App and supersede all prior agreements and understandings.</p>
+      <p><strong>No Waiver.</strong> Our failure to enforce any provision of these Terms shall not be deemed a waiver of our right to enforce such provision in the future.</p>
+      <p><strong>Assignment.</strong> You may not assign or transfer these Terms or any rights hereunder without our prior written consent. We may assign these Terms freely without restriction.</p>
+      <p><strong>Severability.</strong> If any provision of these Terms is found unenforceable, that provision will be modified to the minimum extent necessary to make it enforceable, and the remaining provisions will remain in full force and effect.</p>
+      <p><strong>Export Compliance.</strong> You represent that you are not located in a country subject to a U.S. government embargo or designated as a "terrorist supporting" country, and that you are not listed on any U.S. government list of prohibited or restricted parties.</p>
+    </section>
+
+    <section>
+      <h2>17. Contact</h2>
+      <p>If you have questions about these Terms, please contact us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a></p>
+    </section>
+  </div>
+
+  <!-- ── 中文 ── -->
+  <div class="lang-zh" style="display:none">
+    <div class="doc-header">
+      <h1>用户协议</h1>
+      <p class="effective-date">生效日期：2026 年 4 月 28 日</p>
+    </div>
+
+    <section>
+      <h2>1. 接受条款</h2>
+      <p>您一旦下载、安装或使用 ReDance 移动应用程序（以下简称「本应用」），即表示您同意受本用户协议（以下简称「本协议」）的约束。如您不同意本协议，请勿使用本应用。本协议构成您与 ReDance 之间具有法律约束力的协议。<strong>Apple Inc. 不是本协议的当事方，对本应用或其内容不承担任何责任。</strong></p>
+    </section>
+
+    <section>
+      <h2>2. 与 Apple 的关系</h2>
+      <p>您确认并同意：</p>
+      <ul>
+        <li>本协议仅在您与 ReDance 之间订立，Apple Inc. 不是本协议的当事方。</li>
+        <li>Apple 对本应用或其内容不承担任何责任。</li>
+        <li>Apple 对本应用的维护或支持服务不承担任何义务。</li>
+        <li>若本应用未能符合任何适用的保修条款，您可通知 Apple，Apple 将退还您的购买价款（如有）。在适用法律允许的最大范围内，Apple 对本应用不承担任何其他保修义务。</li>
+        <li>Apple 不负责处理您或任何第三方关于本应用的任何索赔，包括：(i) 产品责任索赔；(ii) 本应用未能符合任何适用法律或法规要求的索赔；或 (iii) 依据消费者保护法律提出的索赔。</li>
+        <li>Apple 不负责对任何第三方关于本应用的知识产权侵权索赔进行调查、辩护、和解或处理。</li>
+        <li>您同意在使用本应用时遵守所有适用的第三方条款。</li>
+        <li>Apple 及其子公司是本协议的第三方受益人，您接受本协议后，Apple 有权作为第三方受益人对您执行本协议。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 使用资格</h2>
+      <p>您须年满 13 周岁方可使用本应用。使用本应用即表示您符合上述要求。若您未满 18 周岁，则表示您的父母或法定监护人已代表您审阅并同意本协议。</p>
+    </section>
+
+    <section>
+      <h2>4. 许可授权</h2>
+      <p>在遵守本协议的前提下，ReDance 授予您有限的、非独占的、不可转让的、可撤销的许可，允许您在您拥有或控制的 Apple 设备上，按照 App Store 服务条款的规定，下载和使用本应用，仅供个人非商业用途。本许可不包括向任何第三方再授权的权利。<strong>本应用向您许可使用，而非出售。</strong></p>
+    </section>
+
+    <section>
+      <h2>5. 使用限制</h2>
+      <p>您不得进行以下行为：</p>
+      <ul>
+        <li>复制、修改本应用或创作其衍生作品</li>
+        <li>对本应用进行逆向工程、反编译、反汇编或以其他方式尝试获取源代码</li>
+        <li>出租、出借、出售、再分发或再授权本应用</li>
+        <li>删除或更改本应用上的任何专有声明、标签或标志</li>
+        <li>将本应用用于任何违法目的或违反适用法律法规的行为</li>
+        <li>尝试未经授权访问与本应用相关的任何系统或网络</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. 您的内容与版权责任</h2>
+      <p>本应用允许您从设备相册中导入视频，用于个人练习。您对所导入的视频保留完整所有权。您的视频仅存储于本地设备，不会传输至我们的服务器。我们无法访问您导入的任何内容，亦不对其进行监控。</p>
+      <div class="warning">
+        <strong>您须独立承担全部责任，确保对所导入视频中涉及的所有内容拥有必要的权利、许可及授权</strong>，包括但不限于视频中涉及的音乐、录音、表演、编舞及视觉内容的相关权利。
+      </div>
+      <p>您导入内容至本应用，即表示您声明并保证：</p>
+      <ul>
+        <li>您拥有或已取得该内容的全部必要权利和许可；且</li>
+        <li>您在本应用中使用该内容的行为不侵犯任何第三方的版权、商标权或其他知识产权。</li>
+      </ul>
+      <p><strong>对于因您导入的内容所引发的任何版权侵权或其他知识产权纠纷，ReDance 不承担任何责任。</strong>若任何第三方因您导入的内容向我们提出索赔，您须独自负责解决该索赔，并承担由此产生的全部费用、损害赔偿及法律责任。</p>
+    </section>
+
+    <section>
+      <h2>7. 肢体活动免责声明</h2>
+      <div class="warning">
+        <strong>本应用旨在辅助舞蹈练习，而舞蹈练习属于存在固有受伤风险的肢体活动。</strong>使用本应用即表示您自愿承担与肢体活动相关的全部风险，包括但不限于肌肉拉伤、扭伤、跌倒及其他身体伤害。
+      </div>
+      <p><strong>对于因使用本应用或在使用本应用过程中进行任何肢体活动所引起的人身伤害、身体损害、死亡或财产损失，ReDance 概不承担任何责任。</strong>您须自行评估自身是否具备从事相关活动的体能条件，我们强烈建议您在开始任何新的肢体活动前咨询医疗专业人员。</p>
+    </section>
+
+    <section>
+      <h2>8. 知识产权</h2>
+      <p>本应用及其设计、代码、图形、用户界面和所有其他组成部分均为 ReDance 所有，受包括版权和商业外观法律在内的适用知识产权法律保护。本协议不向您授予任何关于我们商标、标志或其他品牌要素的权利。任何未经授权使用我们知识产权的行为均被严格禁止。</p>
+    </section>
+
+    <section>
+      <h2>9. 隐私</h2>
+      <p>您对本应用的使用同样受我们<a href="privacy.html">隐私政策</a>的约束，该政策通过引用并入本协议。使用本应用即表示您同意按隐私政策所述收集和使用相关信息。</p>
+    </section>
+
+    <section>
+      <h2>10. 用户赔偿</h2>
+      <p>您同意就以下事项对 ReDance 及其所有者、管理人员及代表进行赔偿、辩护并使其免受损害，包括全部索赔、要求、损失、责任、费用及支出（含合理的律师费）：</p>
+      <ul>
+        <li>您对本应用的使用</li>
+        <li>您导入本应用的任何内容</li>
+        <li>您违反本协议的行为</li>
+        <li>您违反任何适用法律或侵犯任何第三方权利的行为，包括版权、商标权或其他知识产权</li>
+        <li>因您使用本应用引起的任何人身伤害或财产损失</li>
+      </ul>
+      <p>本赔偿义务在本协议终止及您停止使用本应用后继续有效。</p>
+    </section>
+
+    <section>
+      <h2>11. 免责声明</h2>
+      <div class="caps">本应用按「现状」及「可用状态」提供，不附带任何形式的明示或默示保证，包括但不限于适销性、特定用途适用性、所有权及不侵权的默示保证。我们不保证本应用运行不中断、无错误、安全或不含病毒及其他有害组件。ReDance 提供的任何口头或书面信息或建议均不构成任何形式的保证。</div>
+    </section>
+
+    <section>
+      <h2>12. 责任限制</h2>
+      <div class="caps">在适用法律允许的最大范围内，ReDance 对因本协议或您使用或无法使用本应用而引起的任何间接、附带、特殊、后果性、惩戒性或惩罚性损害不承担任何责任，即使 ReDance 已被告知此类损害的可能性。</div>
+      <div class="caps" style="margin-top:10px">在适用法律允许的最大范围内，ReDance 就因本协议或本应用引起的所有索赔对您承担的累计总责任不超过壹美元（USD $1.00）。</div>
+    </section>
+
+    <section>
+      <h2>13. 争议解决与仲裁</h2>
+      <div class="notice"><strong>请仔细阅读本条款，本条款将影响您的法律权利。</strong></div>
+      <p>您与 ReDance 同意，因本协议或您使用本应用引起的任何争议、索赔或纠纷，应通过具有约束力的个人仲裁解决，而非诉诸法院。但任何一方均可就知识产权侵权问题向法院寻求禁令或其他衡平救济。</p>
+      <div class="caps">集体诉讼豁免：您与 ReDance 均同意，各方仅可以个人名义提出索赔，不得以任何形式的集体诉讼、集合诉讼或代表性诉讼的原告或成员身份提出索赔。若本条款被认定为不可执行，则整个仲裁条款将归于无效。</div>
+      <p style="margin-top:12px">仲裁应在华盛顿州依据美国仲裁协会规则进行。仲裁裁决为终局性裁决，具有约束力，可在任何具有管辖权的法院作为判决执行。</p>
+    </section>
+
+    <section>
+      <h2>14. 适用法律</h2>
+      <p>对于不适用第 13 条仲裁的争议，本协议受美利坚合众国华盛顿州法律管辖并依其解释，不考虑法律冲突规则。您同意接受华盛顿州法院的专属管辖。</p>
+    </section>
+
+    <section>
+      <h2>15. 终止</h2>
+      <p>我们保留随时暂停或终止本应用的权利，无需事先通知，亦无需说明理由，且对您不承担任何责任。协议终止后，您使用本应用的许可立即终止。第 6、7、8、10、11、12、13 及 14 条在协议终止后继续有效。</p>
+    </section>
+
+    <section>
+      <h2>16. 一般条款</h2>
+      <p><strong>完整协议。</strong>本协议连同隐私政策构成您与 ReDance 就本应用达成的完整协议，取代双方之前的一切协议和谅解。</p>
+      <p><strong>权利不放弃。</strong>我们未能执行本协议任何条款，不得视为我们放弃日后执行该条款的权利。</p>
+      <p><strong>转让。</strong>未经我们事先书面同意，您不得转让本协议或其项下的任何权利。我们可自由转让本协议，不受任何限制。</p>
+      <p><strong>可分割性。</strong>若本协议的任何条款被认定为不可执行，该条款将被修改至可执行的最低限度，其余条款继续完全有效。</p>
+      <p><strong>出口合规。</strong>您声明您所在国家不在美国政府的禁运名单中，您本人也不在美国政府的任何禁止或受限人员名单中。</p>
+    </section>
+
+    <section>
+      <h2>17. 联系方式</h2>
+      <p>如您对本协议有任何疑问，请通过以下方式联系我们：</p>
+      <p><strong>电子邮件：</strong><a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a></p>
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  <p>ReDance &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a></p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+    document.querySelectorAll('.lang-zh').forEach(el => el.style.display = lang === 'zh' ? '' : 'none');
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : 'en';
+    try { localStorage.setItem('redance_lang', lang); } catch(e) {}
+  }
+
+  (function() {
+    var saved = '';
+    try { saved = localStorage.getItem('redance_lang') || ''; } catch(e) {}
+    var lang = saved || (navigator.language || '').startsWith('zh') ? 'zh' : 'en';
+    if (lang !== 'en') setLang(lang);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — ReDance</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .app-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1d1d1f;
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      gap: 4px;
+      background: #f0f0f0;
+      border-radius: 8px;
+      padding: 3px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      color: #6e6e73;
+      transition: all 0.15s;
+    }
+
+    .lang-btn.active {
+      background: #fff;
+      color: #1d1d1f;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+
+    .doc-header {
+      margin-bottom: 36px;
+    }
+
+    .doc-header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #1d1d1f;
+      margin-bottom: 8px;
+    }
+
+    .effective-date {
+      font-size: 14px;
+      color: #6e6e73;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1d1d1f;
+      margin: 20px 0 8px;
+    }
+
+    p {
+      color: #3a3a3c;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 12px;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #3a3a3c;
+      padding: 5px 0 5px 18px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: #6e6e73;
+      font-weight: 700;
+    }
+
+    a {
+      color: #007AFF;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    strong { color: #1d1d1f; }
+
+    .notice {
+      background: #f2f7ff;
+      border-left: 3px solid #007AFF;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin: 14px 0;
+      font-size: 15px;
+      color: #3a3a3c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: #6e6e73;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #6e6e73;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      main { margin: 24px auto; padding: 0 16px 60px; }
+      section { padding: 22px 18px; border-radius: 12px; }
+      .doc-header h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="app-name" href="index.html">ReDance</a>
+  <div class="lang-toggle">
+    <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" data-lang="zh" onclick="setLang('zh')">中文</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ── English ── -->
+  <div class="lang-en">
+    <div class="doc-header">
+      <h1>Privacy Policy</h1>
+      <p class="effective-date">Effective Date: April 28, 2026</p>
+    </div>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>ReDance ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights when you use the ReDance mobile application (the "App").</p>
+    </section>
+
+    <section>
+      <h2>2. Information We Collect</h2>
+
+      <h3>a. Analytics Data (via PostHog)</h3>
+      <p>We use PostHog, a third-party analytics service, to collect usage data to help us understand how the App is used and improve the user experience. This includes:</p>
+      <ul>
+        <li>App launch events</li>
+        <li>Video import events (file duration, import source, library size)</li>
+        <li>Playback session data (playback speed, session duration, loop count, seek interactions)</li>
+        <li>Feature usage (mirror mode, countdown timer, speed changes)</li>
+      </ul>
+      <p>PostHog also automatically assigns each installation a randomly generated device identifier and collects certain technical information, including device model, operating system version, app version, device language, timezone, and IP address. This identifier is not linked to your name, email, or any other personal information. PostHog may use your IP address to derive your approximate geographic region. For details on how PostHog handles this data, please refer to the <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog Privacy Policy</a>.</p>
+
+      <h3>b. Photo Library and Video Files</h3>
+      <p>The App requests access to your photo library solely to allow you to select and import videos for personal practice use. When you import a video, it is copied to local storage on your device only.</p>
+      <div class="notice"><strong>Your videos are never uploaded to any server, and we have no ability to remotely access your content.</strong> When you delete the App, all locally stored videos are permanently removed from your device.</div>
+    </section>
+
+    <section>
+      <h2>3. How We Use Your Information</h2>
+      <p>We use analytics data solely to understand feature usage, identify performance issues, and prioritize improvements.</p>
+      <p><strong>We do not sell, rent, or share your personal information with third parties for advertising or marketing purposes.</strong></p>
+    </section>
+
+    <section>
+      <h2>4. Third-Party Services</h2>
+      <p><strong>PostHog</strong> — analytics platform. Event data is processed on PostHog's servers located in the United States.</p>
+      <p>Privacy Policy: <a href="https://posthog.com/privacy" target="_blank" rel="noopener">https://posthog.com/privacy</a></p>
+    </section>
+
+    <section>
+      <h2>5. Data Retention and Deletion</h2>
+      <p>Videos you import are stored locally on your device and are deleted when you remove the App. Analytics events collected by PostHog are retained according to PostHog's own data retention policy. Because analytics data is not linked to your personal identity, we are unable to identify or retrieve specific records upon request; however, you may contact us to request that we configure your data for deletion on our PostHog account.</p>
+    </section>
+
+    <section>
+      <h2>6. Data Security</h2>
+      <p>We take reasonable technical measures to protect the information associated with your use of the App. Your videos are stored only on your device and are never transmitted. Analytics data is transmitted to PostHog over encrypted connections (HTTPS). However, no method of electronic transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+    </section>
+
+    <section>
+      <h2>7. Children's Privacy</h2>
+      <p>The App is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with information, please contact us at <a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a> and we will take prompt action.</p>
+    </section>
+
+    <section>
+      <h2>8. Your Privacy Rights</h2>
+      <p>Depending on your location, you may have rights to access, correct, or delete information associated with your use of the App, or to opt out of certain data collection practices. To exercise any of these rights, please contact us at <a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a>. We will respond within a reasonable timeframe.</p>
+    </section>
+
+    <section>
+      <h2>9. Changes to This Policy</h2>
+      <p>We may update this policy periodically. The "Effective Date" at the top will reflect the latest revision. Continued use of the App after changes constitutes your acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2>10. Contact</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a></p>
+    </section>
+  </div>
+
+  <!-- ── 中文 ── -->
+  <div class="lang-zh" style="display:none">
+    <div class="doc-header">
+      <h1>隐私政策</h1>
+      <p class="effective-date">生效日期：2026 年 4 月 28 日</p>
+    </div>
+
+    <section>
+      <h2>1. 简介</h2>
+      <p>ReDance（以下简称「我们」）致力于保护您的隐私。本隐私政策说明我们在您使用 ReDance 移动应用程序（以下简称「本应用」）时收集哪些信息、如何使用，以及您对相关信息享有的权利。</p>
+    </section>
+
+    <section>
+      <h2>2. 我们收集的信息</h2>
+
+      <h3>a. 分析数据（通过 PostHog）</h3>
+      <p>我们使用第三方分析服务 PostHog 收集使用数据，以了解本应用的使用情况并持续改进用户体验。收集的事件包括：</p>
+      <ul>
+        <li>应用启动事件</li>
+        <li>视频导入事件（视频时长、导入来源、库中视频数量）</li>
+        <li>播放会话数据（播放速度、会话时长、循环次数、进度条操作）</li>
+        <li>功能使用情况（镜像模式、倒计时、速度调整）</li>
+      </ul>
+      <p>PostHog 还会为每个应用安装自动生成一个随机设备标识符，并收集部分技术信息，包括设备型号、操作系统版本、应用版本、设备语言、时区及 IP 地址。该标识符不与您的姓名、电子邮件或任何其他个人信息相关联。PostHog 可能使用您的 IP 地址推断您所在的大致地区。有关 PostHog 数据处理的详情，请参阅 <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog 隐私政策</a>。</p>
+
+      <h3>b. 相册与视频文件</h3>
+      <p>本应用仅在您选择导入视频时请求访问您的相册权限，所选视频将被复制至您设备的本地存储，仅供个人练习使用。</p>
+      <div class="notice"><strong>您的视频不会上传至任何服务器，我们无法远程访问您的任何视频内容。</strong>当您删除本应用时，所有本地存储的视频将从您的设备上永久删除。</div>
+    </section>
+
+    <section>
+      <h2>3. 信息的使用方式</h2>
+      <p>我们仅将分析数据用于了解功能使用情况、识别性能问题及规划功能优先级。</p>
+      <p><strong>我们不会出售、出租您的个人信息，也不会将其共享给第三方用于广告或营销目的。</strong></p>
+    </section>
+
+    <section>
+      <h2>4. 第三方服务</h2>
+      <p><strong>PostHog</strong> —— 分析平台，事件数据在其位于美国的服务器上处理。</p>
+      <p>隐私政策：<a href="https://posthog.com/privacy" target="_blank" rel="noopener">https://posthog.com/privacy</a></p>
+    </section>
+
+    <section>
+      <h2>5. 数据保留与删除</h2>
+      <p>您导入的视频仅存储于本地设备，删除本应用后将一并删除。PostHog 收集的分析事件依据其自身的数据保留政策进行存储。由于分析数据不与个人身份关联，我们无法识别特定用户的数据记录；如需请求删除，请通过 <a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a> 联系我们，我们将在 PostHog 账户中配置相应的删除操作。</p>
+    </section>
+
+    <section>
+      <h2>6. 数据安全</h2>
+      <p>我们采取合理的技术措施保护与您使用本应用相关的信息。您的视频仅存储于本地设备，不会被传输。分析数据通过加密连接（HTTPS）传输至 PostHog。但任何电子传输或存储方式均无法保证绝对安全，我们无法作出完全安全的承诺。</p>
+    </section>
+
+    <section>
+      <h2>7. 未成年人隐私</h2>
+      <p>本应用不面向 13 岁以下儿童。我们不会故意收集 13 岁以下儿童的个人信息。如您认为儿童向我们提供了个人信息，请通过 <a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a> 联系我们，我们将及时处理。</p>
+    </section>
+
+    <section>
+      <h2>8. 您的隐私权利</h2>
+      <p>根据您所在地区的法律，您可能享有访问、更正或删除与您使用本应用相关的信息，或退出特定数据收集活动的权利。如需行使上述权利，请通过 <a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a> 联系我们，我们将在合理时限内予以回复。</p>
+    </section>
+
+    <section>
+      <h2>9. 政策变更</h2>
+      <p>我们可能不定期更新本隐私政策，更新后页面顶部的「生效日期」将同步修改。您在变更后继续使用本应用，即视为接受更新后的政策。</p>
+    </section>
+
+    <section>
+      <h2>10. 联系方式</h2>
+      <p>如您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
+      <p><strong>电子邮件：</strong><a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a></p>
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  <p>ReDance &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a> &nbsp;·&nbsp; <a href="mailto:redance.app@gmail.com">redance.app@gmail.com</a></p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+    document.querySelectorAll('.lang-zh').forEach(el => el.style.display = lang === 'zh' ? '' : 'none');
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : 'en';
+    try { localStorage.setItem('redance_lang', lang); } catch(e) {}
+  }
+
+  (function() {
+    var saved = '';
+    try { saved = localStorage.getItem('redance_lang') || ''; } catch(e) {}
+    var lang = saved || (navigator.language || '').startsWith('zh') ? 'zh' : 'en';
+    if (lang !== 'en') setLang(lang);
+  })();
+</script>
+
+</body>
+</html>
