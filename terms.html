@@ -496,6 +496,8 @@
   }
 
   (function() {
+    var fromUrl = new URLSearchParams(window.location.search).get('lang');
+    if (fromUrl === 'zh' || fromUrl === 'en') { setLang(fromUrl); return; }
     var saved = '';
     try { saved = localStorage.getItem('redance_lang') || ''; } catch(e) {}
     var lang = saved || (navigator.language || '').startsWith('zh') ? 'zh' : 'en';
